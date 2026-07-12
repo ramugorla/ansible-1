@@ -3,7 +3,7 @@
   tasks:
   - name: vras from files 
     vars: 
-      - course.yaml 
+    - course.yaml 
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, duration is {{ DURATION }} and trainer is {{ TRAINER }}"
       
