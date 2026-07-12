@@ -5,9 +5,9 @@
     ansible.builtin.debug:
       msg: "Hello from PLAY1 and TASK1"
 
-  - name: PLAY2 
-    hosts: web 
-    tasks:
+- name: PLAY2 
+  hosts: web 
+  tasks:
   - name: PLAY2 and TASK2 
     ansible.builtin.debug:
       msg: "Hello from PLAY2 and TASK2"
