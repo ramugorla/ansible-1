@@ -1,7 +1,11 @@
 - name: Print Course Information 
-  hosts: web 
+  hosts: web
+  vars:
+    COURSE: "Devops With AWS"
+    DURATION: 120HRS
+    TRAINER: "Siva Kumar" 
   tasks:
   - name: Course Info 
     ansible.builtin.debug:
-      msg: "Course is Devops With AWS, duration is 120HRS and trainer is Siva Kumar"
+      msg: "Course is {{ COURSE }}, duration is {{ DURATION }} and trainer is {{ TRAINER }}"
       
