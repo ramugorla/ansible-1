@@ -6,6 +6,11 @@
     TRAINER: "Siva Raj Kumar" 
   tasks:
   - name: Course Info 
+    vars:
+      COURSE: ansible
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, duration is {{ DURATION }} and trainer is {{ TRAINER }}"
       
+  - name: Course Info
+    ansible.builtin.debug:
+      msg: "Course is {{ COURSE }}, duration is {{ DURATION }} and trainer is {{ TRAINER }}"
