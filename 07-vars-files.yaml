@@ -1,8 +1,8 @@
 - name: variables from files
   hosts: web 
-  tasks:
   vars_files: 
   - course.yaml
+  tasks:
   - name: vras from files  
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, duration is {{ DURATION }} and trainer is {{ TRAINER }}"
