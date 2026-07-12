@@ -14,5 +14,5 @@
   - name: stop nginx 
     ansible.builtin.service:
       name: nginx 
-      state: stop 
+      state: stopped 
       enabled: yes 
