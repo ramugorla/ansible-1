@@ -1,9 +1,9 @@
 - name: variables from files
   hosts: web 
   tasks:
-  - name: vras from files 
-    vars: 
-    - course.yaml 
+  vars: 
+  - course.yaml
+  - name: vras from files  
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, duration is {{ DURATION }} and trainer is {{ TRAINER }}"
       
