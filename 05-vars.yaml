@@ -8,6 +8,8 @@
   - name: Course Info 
     vars:
       COURSE: ansible
+      DURATION: 10HRS 
+      TRAINER: Ramu
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, duration is {{ DURATION }} and trainer is {{ TRAINER }}"
       
