@@ -1,0 +1,7 @@
+- name: Print Course Information 
+  hosts: web 
+  tasks:
+  - name: Course Info 
+    ansible.builtin.debug:
+    msg: "Course is Devops With AWS, duration is 120HRS and trainer is Siva Kumar"
+    
