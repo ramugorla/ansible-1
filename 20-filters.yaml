@@ -18,8 +18,8 @@
         ci: Jenkins
         cloud: aws
         Iac: terraform
-      ansible.builtin.debug:
-        msg: "Course is : {{ course | dict2items }}"
+    ansible.builtin.debug:
+      msg: "Course is : {{ course | dict2items }}"
 
 
     
