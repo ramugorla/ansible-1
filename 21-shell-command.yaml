@@ -1,0 +1,7 @@
+- name: shell and command module 
+  hosts: local
+  connection: local
+  tasks:
+  - name: shell module 
+    ansible.builtin.shell: ls -lt > /tmp/output.txt 
+    
