@@ -3,12 +3,11 @@
   connection: local
   become: yes 
   tasks:
-  - name: multipls packages 
-    ansible.builtin.packages:
+  - name: multiple packages 
+    ansible.builtin.package:
       name: "{{ item }}"
       state: installed 
-    loop:
-      - gcc
-      - git
-      - python 
-      
+  loop:
+    - gcc
+    - git
+    - python 
