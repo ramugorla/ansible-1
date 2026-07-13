@@ -35,6 +35,6 @@
     ansible.builtin.debug:
     vars:
       name: Ramu Gorla Yadav
-      msg: "{{ name | lower}}"
+      msg: "{{ name | lower }}"
 
     
