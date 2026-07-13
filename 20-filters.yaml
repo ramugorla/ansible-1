@@ -2,6 +2,11 @@
   hosts: local
   connection: local
   tasks:
+
+  - name: installing python lib 
+    ansible.builtin.pip:
+      name: netaddr
+      executable: pip3.9
   - name: funtions
     ansible.builtin.debug:
       msg: "Hello {{ PERSON | default ('Ramu') }}"
