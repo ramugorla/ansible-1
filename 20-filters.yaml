@@ -12,5 +12,14 @@
     ansible.builtin.debug:
       msg: "Fruits are {{ fruits | split(',')}}"
 
+  - name: converting dict to list 
+    vars:
+      course:
+        ci: Jenkins
+        cloud: aws
+        Iac: terraform
+      ansible.builtin.debug:
+        msg: "Course is : {{ course | dict2items }}"
+
 
     
