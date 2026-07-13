@@ -1,4 +1,4 @@
-- name: installing multiple packages 
+- name: installing multiple package
   hosts: local
   connection: local
   become: yes 
