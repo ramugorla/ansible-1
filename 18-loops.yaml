@@ -1,0 +1,14 @@
+- name: installing multiple packages 
+  hosts: local
+  connection: local
+  become: yes 
+  tasks:
+  - name: multipls packages 
+    ansible.builtin.packages:
+      name: "{{ item }}"
+      state: installed 
+    loop:
+      - gcc
+      - git
+      - python 
+      
