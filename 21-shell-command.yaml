@@ -4,4 +4,8 @@
   tasks:
   - name: shell module 
     ansible.builtin.shell: ls -lt > /tmp/output.txt 
-    
+    register: shell_output 
+  
+  - name: output 
+    ansible.builtin.debug:
+      msg: "{{ shell_output }}"
