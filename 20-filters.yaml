@@ -21,5 +21,14 @@
     ansible.builtin.debug:
       msg: "Course is : {{ course | dict2items }}"
 
+  - name: converting list to dict
+    vars: 
+      course:
+        - {'key': 'ci', 'value': 'Jenkins'}
+        - {'key': 'cloud', 'value': 'aws'}
+        - {'key': 'Iac', 'value': 'terraform'}
+    ansible.builtin.debug:
+      msg: "{{ course | items2dict }}"
 
+      
     
