@@ -4,16 +4,16 @@
   vars:
     COURSE: "Devops With AWS"
     DURATION: 10
-  topics:
-    - linux
-    - ansible
-    - terraform
-    - shell script
-  live: true
-  tools:
-    CI: Jenkins
-    cloud: aws
-    containers: EKS
+    topics:
+      - linux
+      - ansible
+      - terraform
+      - shell script
+    live: true
+    tools:
+      CI: Jenkins
+      cloud: aws
+      containers: EKS
   tasks: 
   - name: print course information
     ansible.builtin.debug:
