@@ -3,13 +3,13 @@
   connection: local
   become: yes
   tasks:
-  - name: install nginx service 
+  - name: install nginx service if RHEL
     ansible.builtin.dnf:
       name: nginx
       state: installed
     when: ansible_os_family == "RedHat"
   
-  - name: install nginx 
+  - name: install nginx if ubuntu
     ansible.builtin.apt:
       name: nginx
       state: installed 
