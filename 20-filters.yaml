@@ -30,5 +30,11 @@
     ansible.builtin.debug:
       msg: "{{ course | items2dict }}"
 
-      
+
+  - name: upper to lower
+    ansible.builtin.debug:
+    vars:
+      name: Ramu Gorla Yadav
+      msg: "{{ name | lower}}"
+
     
